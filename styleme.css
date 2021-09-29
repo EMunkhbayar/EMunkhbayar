@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body {
+    background-color: #e5ebeb;
+    color: #001337;
+}
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #a1045a;
+}
+.description {
+    font-size: larger;
+    font-style: italic;
+}
+.bold-pink {
+    font-weight: bold;
+    color: palevioletred;
+}
+ul {
+    font-family: 'Courier New', Courier, monospace;
+}
+.row {
+   display: flex; 
+}  
+.column {
+    padding: 5px;
+}
+h4 {
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+    color: #a1045a;
+}
+a:hover {
+    text-decoration: underline;
+}
+p::first-letter {
+    font-size: xx-large;
+}
+dl > dt {
+    color: palevioletred;
+    font-style: oblique;
+}
+ol.decrement {
+    list-style-type: none;
+    counter-reset: cnt 4;
+}
+ol.decrement li::before {
+    content: counter(cnt)'. ';
+    counter-increment: cnt -1;
+}
+.read-more-state {
+    display: none;
+  }
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+}
+ .read-more-state:checked ~ .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+.read-more-state ~ .read-more-trigger:before {
+    content: '(more)';
+}
+.read-more-state:checked ~ .read-more-trigger:before {
+    content: '(less)';
+}
+.read-more-trigger {
+    font-size: small;
+    color: #a1045a;
+}
