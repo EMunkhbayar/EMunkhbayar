@@ -1,0 +1,136 @@
+/* Exercise 1 */
+#outer {
+	border: 2px dashed black;
+	padding: 10px;
+    overflow: hidden;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	margin: 10px;
+    float: left;
+}
+
+.cleared {
+    clear: left;
+}
+/* Exercise 2 */
+ul {
+    background-color: red;
+    text-align: center;
+    padding: 30px;
+}
+li {
+    display: inline;
+    border: black 1pt solid;
+    background-color: white;
+    padding: 15px;
+}
+/* Exercise 3 */
+.maindiv1 {
+    width: 500px;
+    background-color: lightgray;
+    overflow: hidden;
+    padding: 10px;
+}
+.maindiv1 h1 {
+    background-color: yellow;
+}
+.col1, .col2 {
+    background-color: lightblue;
+    float: right;
+    margin-left: 10px;
+    width: 100px;
+}
+/* Exercise 4 */
+.maindiv2 {
+    width: 30%;
+    height: 300px;
+    margin-bottom: 5px;
+    overflow: auto;
+    border: 1px black solid;
+}
+#a1, #a2, #a3, #b1, #b2, #b3,
+#a4, #a5, #a6, #b4, #b5, #b6,
+#a7, #a8, #a9, #b7, #b8, #b9 {
+	width: 100px;
+	height: 100px;
+	font: 30pt bold Helvetica, Arial, sans-serif;
+	line-height: 100px;
+	text-align: center;
+}
+#a1, #a2, #a3,
+#a7, #a8, #a9 {
+	background-color: lightblue;
+    float: left;
+}
+#b1, #b2, #b3 {
+	background-color: pink;
+    float: right;
+}
+#c1, #c2, #c3,
+#c4, #c5, #c6,
+#c7, #c8, #c9 {
+	background-color: lightgray;
+}
+#b2, #b3 {
+    float: right;
+    clear: left;
+}
+#c3 {
+    clear: left;
+    text-align: right;
+}
+#a4, #a5, #a6 {
+	background-color: lightblue;
+}
+#b4, #b5, #b6,
+#b7, #b8, #b9 {
+	background-color: pink;
+}
+#b4 {
+    float: right;
+    clear: left;
+}
+#c4 {
+    text-align: right;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#a5, #a6 {
+    float: right;
+}
+#a4, #b5,
+#a7, #b7, #b9, #c8 {
+    float: left;
+}
+#c5 {
+    text-align: center;
+    width: 100px;
+    float: left;
+}
+#b6 {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+#c6 {
+    clear: right;
+    text-align: center;
+    margin-right: 100px;
+}
+#div6 {
+    position: relative;
+}
+#c7 {
+    margin-left: 200px;
+}
+#c9 { 
+    margin-top: 100px;
+}
+#d {
+    height: 100px;
+}
