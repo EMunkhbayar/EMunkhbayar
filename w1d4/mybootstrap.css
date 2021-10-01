@@ -1,0 +1,26 @@
+header {
+    background-color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav {
+    background-color: #196455;
+}
+nav ul li a.nav-link {
+    border-right: 1px solid #333333;
+}
+.col1 {
+    background-color: grey;
+    height: 200px;
+}
+.col2 {
+    background-color: darkgrey;
+    height: 200px;
+}
+.col3 {
+    background-color: lightgray;
+    height: 200px;
+}
+footer {
+    background-color: #196455;
+}

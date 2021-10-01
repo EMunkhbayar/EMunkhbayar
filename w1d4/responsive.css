@@ -1,0 +1,53 @@
+.container {
+    padding: 5px;
+}
+header {
+    background-color: lightblue;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    background-color: #196455;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border-right: 1px solid black;
+}
+.content {
+    display: grid;
+    grid-template-areas:
+          "col1 col3"
+          "col2 col2";
+}
+.content > div {
+    height: 200px;
+    padding: 10px;
+}
+.col1 {
+    background-color: grey;
+    grid-area: col1;
+}
+.col2 {
+    background-color: darkgrey;
+    grid-area: col2;
+}
+.col3 {
+    background-color: lightgray;
+    grid-area: col3;
+}
+footer {
+    background-color: #196455;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+@media screen and (min-width:600px){
+    .content {
+        grid-template-areas: "col1 col2 col2 col3";
+    }
+}
