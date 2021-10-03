@@ -7,7 +7,9 @@
 #text-area{
 	font-family: monospace;
     font-size: 12pt;
-	width: 100%;
+    font-weight: bold;
+	width: 90%;
+    height: 400px;
 }
 
 fieldset{
