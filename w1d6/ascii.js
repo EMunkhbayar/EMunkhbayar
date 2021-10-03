@@ -20,6 +20,7 @@ window.onload = function () {
       defaultValue = textArea.value;
       stopBtn.disabled = false;
       startBtn.disabled = true;
+      animation.disabled = true;
       if (animationMoves) {
         textArea.value = animationMoves[(idx = 0)];
         running = true;
@@ -32,6 +33,7 @@ window.onload = function () {
       running = false;
       stopBtn.disabled = true;
       startBtn.disabled = false;
+      animation.disabled = false;
       textArea.value = defaultValue;
     };
   
@@ -41,12 +43,12 @@ window.onload = function () {
   
     sizes.onchange = function () {
       const sizesMap = {
-        Tiny: "8pt",
+        Tiny: "7pt",
         Small: "10pt",
         Medium: "12pt",
-        Large: "14pt",
-        "Extra Large": "16pt",
-        XXL: "18pt",
+        Large: "16pt",
+        "Extra Large": "24pt",
+        XXL: "32pt",
       };
   
       if (textArea.style.fontSize !== sizesMap[sizes.value])
