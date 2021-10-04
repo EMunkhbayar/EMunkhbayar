@@ -1,0 +1,8 @@
+.loginForm {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+.bg-blue {
+    background: linear-gradient(#41a0e4, #2e8adf)
+}

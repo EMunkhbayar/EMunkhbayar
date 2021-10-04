@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Munkhbayar Enkhbaatar">
+    <meta name="description" content="CS472-WAP W2D1 WebForm1">
+    <title>WebForm1</title>
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="webform.css">
+</head>
+
+<body>
+    <div class="loginForm">
+        <form class="g-3">
+            <div class="form-group">
+                <label for="emailAddr">Email address</label>
+                <input type="email" class="form-control" id="emailAddr" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="pw">Password</label>
+                <input type="password" class="form-control" id="pw" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])([A-Z]).{10,}" 
+                    title="Must contain at least 10 characters in length and contain at least one number and one uppercase and lowercase letter" required>
+            </div>
+            <div class="form-group">
+                <label for="url">Website URL</label>
+                <input type="text" class="form-control" id="url" placeholder="Enter url" pattern="https?://.+" 
+                    title="Must beginning with either the string, 'http://' or 'https://'">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="checkme">
+                <label class="form-check-label" for="checkme">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

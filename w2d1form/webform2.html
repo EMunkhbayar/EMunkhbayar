@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Munkhbayar Enkhbaatar">
+    <meta name="description" content="CS472-WAP W2D1 WebForm2">
+    <title>WebForm2</title>
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="webform.css">
+</head>
+
+<body>
+    <header class="p-1 text-white bg-blue">
+        <div class="d-flex flex-wrap align-items-center justify-content-between p-1">
+            <ul class="nav">
+                <li><a href="#" class="nav-link px-4 py-1 text-white fs-5">MUM Golden Dome Market : : : SRM System</a></li>
+                <li><a href="#" class="nav-link px-4 text-white border-start">Products</a></li>
+                <li><a href="#" class="nav-link px-4 text-white border-start">Suppliers</a></li>
+            </ul>
+            <div class="d-flex align-items-center justify-content-end">
+                <span class="mx-3">Hello!</span>
+                <button type="button" class="btn text-secondary btn-light">Sign out</button>
+            </div>
+        </div>
+    </header>
+    <div class="container text-muted">
+        <h1 class="fs-3 fw-normal my-4">New Product Form</h1>
+        <form class="row g-3">
+            <div class="col-6">
+                <label for="prodNum" class="form-label">Product Number</label>
+                <input type="text" class="form-control" id="prodNum">
+            </div>
+            <div class="col-6">
+                <label for="qty" class="form-label">Quantity in stock</label>
+                <input type="number" class="form-control" id="qty" placeholder="0">
+            </div>
+            <div class="col-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="col-6">
+                <label for="supplier" class="form-label">Supplier:</label>
+                <select class="form-select text-muted" id="supplier" placeholder="Select supplier">
+                    <option>Select supplier</option>
+                    <option>Suppl1</option>
+                    <option>Suppl2</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label for="price" class="form-label">Unit Price</label>
+                <input type="number" class="form-control" id="price" placeholder="0.0">
+            </div>
+            <div class="col-6">
+                <label for="suppDate" class="form-label">Date supplied</label>
+                <input type="date" class="form-control text-muted" id="suppDate">
+            </div>
+
+            <div class="col-12 text-end">
+                <button type="submit" class="btn btn-outline-secondary">Reset</button>
+                <button type="submit" class="btn btn-outline-danger ms-4">Cancel</button>
+                <button type="submit" class="btn btn-outline-primary ms-4">Add Product</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
