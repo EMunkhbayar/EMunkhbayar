@@ -1,0 +1,28 @@
+.configForm {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: lavender;
+}
+input {
+    margin: 5px;
+}
+#startBtn {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 150px;
+}
+.container {
+    position: fixed;
+}
+.circle {
+    border-radius: 50%;
+    position: fixed;
+}
+.circle:hover {
+    opacity: 0.7;
+}
