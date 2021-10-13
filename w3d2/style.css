@@ -1,16 +1,20 @@
 .configForm {
     position: fixed;
-    bottom: 0;
+    bottom: 50%;
     right: 0;
     z-index: 100;
     border: 1px solid black;
     padding: 5px;
     background-color: lavender;
 }
+label {
+    display: block;
+}
 input {
     margin: 5px;
 }
 #startBtn {
+    display: block;
     position: relative;
     left: 0;
     right: 0;
