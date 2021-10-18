@@ -1,0 +1,13 @@
+<%- include('head.ejs')%>
+<h1>Product Detail</h1>
+    <form action="/addToCart" method="POST">
+        <h2><%= product.name %></h2>
+    <input type="hidden" value="<%= product.name %>" id="name" name="name">
+    <p class="desc"><%= product.desc %></p>
+    <label for="price">Price: </label>
+    <input type="text" value="<%= product.price %>" id="price" name="price">
+    <label for="qty">Quantity: </label>
+    <input type="text" value="" id="qty" name="qty">
+    <input type="submit" value="Add to Cart">
+    </form>
+<%- include('end.ejs')%>

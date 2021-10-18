@@ -1,5 +1,3 @@
-const Product = require("./product")
-
 const cart = []
 module.exports = class Cart{
     constructor(name, price, qty){

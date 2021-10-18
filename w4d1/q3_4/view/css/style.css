@@ -1,0 +1,13 @@
+ul > li {
+    border-top: 1px solid darkslategrey;
+    padding: 10px;
+}
+.desc {
+    font-style: italic;
+}
+label {
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}
