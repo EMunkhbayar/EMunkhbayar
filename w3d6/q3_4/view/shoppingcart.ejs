@@ -1,0 +1,12 @@
+<%- include('head.ejs') %>
+<h1>Products in Cart</h1>
+    <ul>
+        <% for (const item of list) { %>
+        <li><h2><%= item.name %></h2>
+            <h3>Qty: <%= item.qty %></h3>
+            <h3>Price: <%= item.price %> $</h3>
+        </li> <% } %>
+    </ul>
+
+    <a href="/">Products</a>
+<%- include('end.ejs') %>
