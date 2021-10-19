@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shop</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/css/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="/js/index.js"></script>
+</head>
+<body>
+<h1>Product Detail</h1>
+    <form id="addToCart">
+        <h2><%= product.name %></h2>
+    <input type="hidden" value="<%= product.name %>" id="name" name="name">
+    <p class="desc"><%= product.desc %></p>
+    <label for="price">Price: </label>
+    <input type="text" value="<%= product.price %>" id="price" name="price">
+    <label for="qty">Quantity: </label>
+    <input type="text" value="" id="qty" name="qty">
+    <input type="submit" value="Add to Cart">
+    <span id="msg"></span>
+    </form>
+    <a href="/cart" id="cart">My Shopping Cart (<%= itemNums %>)</a>
+<%- include('end.ejs')%>
